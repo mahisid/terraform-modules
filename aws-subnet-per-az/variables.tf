@@ -6,7 +6,7 @@ variable "aws_vpc_id" {
 }
 
 variable "name_tag" {
-  description = "Name tag of the subnets"
+  description = "Name tag prefix of the subnets"
   type        = string
 }
 

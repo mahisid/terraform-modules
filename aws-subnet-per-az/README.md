@@ -16,7 +16,7 @@
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | aws\_vpc\_id | AWS VPC ID in a region | `string` | n/a | yes |
-| name\_tag | Name tag of the subnets | `string` | n/a | yes |
+| name\_tag | Name tag prefix of the subnets | `string` | n/a | yes |
 | subnet\_cidrs | List of subnet IP CIDR ranges | `list(string)` | n/a | yes |
 
 ## Outputs
