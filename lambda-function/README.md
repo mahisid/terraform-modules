@@ -17,9 +17,9 @@
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| code\_source\_dir | The directory where the lambda function source code exists | `string` | n/a | yes |
 | environment | Environment variables to configure the Lambda function | `map(string)` | `{}` | no |
 | function\_name | The name of the lambda function | `string` | n/a | yes |
+| lambda\_code\_path | The directory where the lambda function source code exists | `string` | n/a | yes |
 | lambda\_description | Description for the lambda function | `string` | n/a | yes |
 | lambda\_execution\_role | Role Arn for lambda execution role | `string` | n/a | yes |
 | lambda\_handler | Lambda function handler | `string` | n/a | yes |

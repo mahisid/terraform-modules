@@ -3,7 +3,7 @@
 data "archive_file" "zip_lambda_code" {
   type        = "zip"
   output_path = "${var.function_name}.zip"
-  source_dir  = var.code_source_dir
+  source_dir  = var.lambda_code_path
 }
 
 resource "aws_s3_bucket_object" "upload_code" {

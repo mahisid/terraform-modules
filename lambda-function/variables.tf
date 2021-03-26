@@ -1,5 +1,5 @@
 
-variable "code_source_dir" {
+variable "lambda_code_path" {
   description = "The directory where the lambda function source code exists"
   type        = string
 }
