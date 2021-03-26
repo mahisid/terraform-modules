@@ -38,9 +38,11 @@ resource "aws_lambda_function" "lambda_function" {
 }
 
 output "lambda_function_arn" {
+  description = "The arn of the lambda function"
   value = aws_lambda_function.lambda_function.arn
 }
 
 output "lambda_function_name" {
+  description = "The name of the lambda function"
   value = var.function_name
 }
