@@ -1,16 +1,16 @@
 
 variable "code_source_dir" {
-  description = "The directory where the source code exists"
+  description = "The directory where the lambda function source code exists"
   type        = string
 }
 
 variable "function_name" {
-  description = "The directory where the source code exists"
+  description = "The name of the lambda function"
   type        = string
 }
 
 variable "s3_bucket_name" {
-  description = "Temporary s3 bucket name for storing code"
+  description = "s3 bucket name for storing lambda function code (Same account and region)"
   type        = string
 }
 
@@ -45,7 +45,7 @@ variable "lambda_handler" {
 }
 
 variable "lambda_layers" {
-  description = "Lambda layers attached to the function"
+  description = "Lambda layer arns attached to the function"
   type        = list(string)
   default     = []
 }
@@ -57,13 +57,13 @@ variable "environment" {
 }
 
 variable "subnet_ids" {
-  description = "subnet ids for lambda VPC config"
+  description = "Subnet ids for lambda VPC config"
   type        = list(string)
   default     = []
 }
 
 variable "security_group_ids" {
-  description = "security group ids for lambda VPC config"
+  description = "Security group ids for lambda VPC config"
   type        = list(string)
   default     = []
 }
