@@ -35,6 +35,6 @@
 
 | Name | Description |
 |------|-------------|
-| lambda\_function\_arn | n/a |
-| lambda\_function\_name | n/a |
+| lambda\_function\_arn | The arn of the lambda function |
+| lambda\_function\_name | The name of the lambda function |
 
